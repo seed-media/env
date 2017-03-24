@@ -9,4 +9,4 @@ dump.rdb
 benchmarks
 .idea
 bin
-
+.env
