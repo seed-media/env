@@ -1,6 +1,5 @@
 'use strict'
 
-const path = require('path')
 const dotenv = require('dotenv')
 
 class Env {
@@ -33,6 +32,10 @@ class Env {
 
   boolify (value) {
     return this.isTruthy(value) ? true : this.isFalsey(value) ? false : value
+  }
+
+  all () {
+    return process.env
   }
 
   exists (key) {
