@@ -2,7 +2,7 @@
 
 ## Usage
 
-    const env = new Env([ string path = .env ])
+    const env = require('@seed-media/env')
 
     // Getting variables
     const databaseHost = env.get('DB_HOST')
