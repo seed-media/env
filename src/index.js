@@ -11,6 +11,18 @@ module.exports = {
     dotenv.load({ path })
   },
 
+  is: function (environment) {
+    if (! Array.isArray(environment)) {
+      environment = [environment]
+    }
+
+    return environment.includes(this.get('NODE_ENV'))
+  },
+
+  isNot: function (environment) {
+    return ! this.is(environment);
+  }
+
   isEmpty: function (value) {
     return (value && value.length !== 0)
   },
