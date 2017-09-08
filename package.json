@@ -18,5 +18,8 @@
   "homepage": "https://github.com/seed-media/env",
   "dependencies": {
     "dotenv": "^4.0.0"
+  },
+  "devDependencies": {
+    "standard": "^10.0.3"
   }
 }
